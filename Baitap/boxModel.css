@@ -1,0 +1,17 @@
+html, body, h1, h2, h3, ul, li, p, a {
+    padding: 20;
+    border: 20;
+    margin: 20;
+    background-color: wheat;
+}
+
+h1 ,h2{
+    color: royalblue;
+}
+
+h3{
+    color: red;
+}
+a {
+    color: rebeccapurple;
+}
