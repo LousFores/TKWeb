@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS| grid-gap Property</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        /* This grid has a 50px gap between columns and 10px gap between rows. :
+        h1 {
+            color: black;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            background-color: blue;
+            padding: 10px;
+        }
+        .grid-container > div {
+            background-color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        } */
+
+        /* This grid has a 8% gap between columns and 5% gap between rows. : */
+        h1 {
+            color: green;
+        }
+         
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-column-gap: 8%;
+            grid-row-gap: 8%;
+            background-color: black;
+            padding: 10%;
+        }
+        .grid-container > div {
+            background-color: yellow;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>GeeksforGeeks</h1>
+    <h2>Grid-grap property</h2>
+    <!-- <p>This grid has a 50px gap between columns and 10px gap between rows. :</p> -->
+    <p>This grid has a 8% gap between columns and 5% gap between rows. :</p>
+    <div> 
+        <div class="grid-container">
+        <div class="item1">P</div>
+        <div class="item2">O</div>
+        <div class="item3">K</div>
+        <div class="item4">E</div>
+        <div class="item5">M</div>
+        <div class="item6">O</div>
+        <div class="item7">N</div>
+    </div>
+</body>
+</html>

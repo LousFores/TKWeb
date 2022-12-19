@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS| grid-column-start Property</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto; 
+            /* Giới hạn grid item trên cùng 1 dòng */
+            grid-gap: 5px;
+            /* Độ rộng đường ngang giữa các grid item */
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        .grid-container div {
+            background-color: green;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+            color: white;
+        }
+
+        .item1 {
+            /* grid-column-start property with auto value */ 
+                    /* Đặt item theo luồng thông thường */
+            /* grid-column-start: auto; */ 
+            /* grid-column-start property with span value */
+                    /* Kéo dài cột của item */
+            /* grid-column-start: span 2; */  
+            /* grid-column-start property with column-line value */
+                    /* Chỉ định cột nào bắt đầu hiển thị item   */
+            grid-column-start: 2;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>The grid-column-start Property</h1>
+        <h3>Auto value</h3>
+        <strong>The item will be place following the initial flow</strong>
+    </center>
+
+    <div class="grid-container">
+        <div class="item1">G</div>
+        <div class="item2">E</div>
+        <div class="item1">T</div>
+        <div class="item1">K</div>
+        <div class="item5">O</div>
+        <div class="item1">G</div>
+        <div class="item7">A</div>
+    </div>
+</body>
+</html>
